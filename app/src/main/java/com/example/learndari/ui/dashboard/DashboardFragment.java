@@ -39,7 +39,6 @@ public class DashboardFragment extends Fragment {
             public void onClick(View v) {
                 Log.d("CREATION","joisarentarositnariost");
                 GlobalS.chosenLetter = "alef";
-                GlobalS.drawLetter = "alef";
                 changeScreen();
                 MainActivity2 mainActivity2 = new MainActivity2();
             }

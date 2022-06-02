@@ -34,7 +34,7 @@ public class DrawActivity extends Activity {
 //        View root = binding.getRoot();
 //        return root;
 //    }
-//I think the above is useless. Delete it later ig
+//the above is useless. Delete it later.
     private DrawingArea drawingArea;
 
 
@@ -43,12 +43,22 @@ public class DrawActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw2);
         TextView text = (TextView) findViewById(R.id.textView4);
-        if(GlobalS.drawLetter.equals("alef")) {
-            text.setText("ا"); //fix this later by replacing the if statement and going back and changing the variable to the letter itself
-            Log.d("CREATION", "awrstarst");
+        switch (GlobalS.drawLetter) {
+            case "alef1":
+            case "alef3":
+            case "alef2":
+                text.setText("ا"); //improve this later by replacing the if statement and going back and changing the variable to the letter itself
+
+                break;
+
+            case "alef4":
+                text.setText("ـا");
+
+                break;
         }
+
         @SuppressLint("UseSwitchCompatOrMaterialCode")
-        Switch hswitch = (Switch) findViewById(R.id.switch1); //later add a tip that says don't worry bro just draw a straight line for alef
+        Switch hswitch = (Switch) findViewById(R.id.switch1); //later add a tip that says don't worry just draw a straight line for alef
 
         hswitch.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b){

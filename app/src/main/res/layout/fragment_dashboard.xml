@@ -30,7 +30,7 @@
         android:layout_marginBottom="25dp"
         android:scaleX="5"
         android:scaleY="5"
-        android:text="@string/alef"
+        android:text="ا"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent" />
 
