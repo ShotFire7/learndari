@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
+<<<<<<< HEAD
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
@@ -1116,4 +1117,58 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+=======
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="25dp"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:text="ا"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:text="@string/alef1"
+        app:layout_constraintBottom_toBottomOf="@+id/btn1"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="88dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="31dp"
+        android:background="#00FFFFFF"
+        android:visibility="visible"
+        app:iconTint="#00ED2C2C"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        tools:ignore="SpeakableTextPresentCheck" />
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
 </androidx.constraintlayout.widget.ConstraintLayout>

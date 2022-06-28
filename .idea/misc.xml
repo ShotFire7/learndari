@@ -8,10 +8,17 @@
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_draw1.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_draw2.xml" value="0.33" />
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_main.xml" value="0.33" />
+<<<<<<< HEAD
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_main1.xml" value="0.25" />
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_main2.xml" value="0.2015625" />
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/content_draw.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/fragment_dashboard.xml" value="0.5" />
+=======
+        <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_main1.xml" value="0.33" />
+        <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/activity_main2.xml" value="0.2015625" />
+        <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/content_draw.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/layout/fragment_home.xml" value="0.1661600810536981" />
         <entry key="..\:/Users/shotf/AndroidStudioProjects/learndari/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2015625" />
       </map>

@@ -43,6 +43,7 @@ public class DrawActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw2);
         TextView text = (TextView) findViewById(R.id.textView4);
+<<<<<<< HEAD
         text.setText(GlobalS.drawLetter);
         Log.d("CREATION",GlobalS.drawLetter);
 //        switch (GlobalS.drawLetter) {
@@ -58,6 +59,21 @@ public class DrawActivity extends Activity {
 //
 //                break;
 //        }
+=======
+        switch (GlobalS.drawLetter) {
+            case "alef1":
+            case "alef3":
+            case "alef2":
+                text.setText("ا"); //improve this later by replacing the if statement and going back and changing the variable to the letter itself
+
+                break;
+
+            case "alef4":
+                text.setText("ـا");
+
+                break;
+        }
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
 
         @SuppressLint("UseSwitchCompatOrMaterialCode")
         Switch hswitch = (Switch) findViewById(R.id.switch1); //later add a tip that says don't worry just draw a straight line for alef

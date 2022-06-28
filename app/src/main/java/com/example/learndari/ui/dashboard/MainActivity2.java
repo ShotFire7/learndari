@@ -5,10 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
+=======
+import android.util.Log;
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+<<<<<<< HEAD
+=======
+import com.example.learndari.MainActivity;
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
 import com.example.learndari.R;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -24,6 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         Button button2 = (Button) findViewById(R.id.btn5);
         Button button3 = (Button) findViewById(R.id.btn4);
         Button button4 = (Button) findViewById(R.id.btn3);
+<<<<<<< HEAD
         TextView text = (TextView) findViewById(R.id.textView3);
         TextView text2 = (TextView) findViewById(R.id.textView9);
         TextView text3 = (TextView) findViewById(R.id.textView10);
@@ -33,6 +42,12 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 GlobalS.drawLetter = text2.getText().toString();
+=======
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalS.drawLetter = GlobalS.chosenLetter+"1";
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -40,7 +55,11 @@ public class MainActivity2 extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 GlobalS.drawLetter = text3.getText().toString();
+=======
+                GlobalS.drawLetter = GlobalS.chosenLetter+"2";
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -48,7 +67,11 @@ public class MainActivity2 extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 GlobalS.drawLetter = text4.getText().toString();
+=======
+                GlobalS.drawLetter = GlobalS.chosenLetter+"3";
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -56,7 +79,11 @@ public class MainActivity2 extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 GlobalS.drawLetter = text5.getText().toString();
+=======
+                GlobalS.drawLetter = GlobalS.chosenLetter+"4";
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -85,22 +112,35 @@ public class MainActivity2 extends AppCompatActivity {
             printStarter();
 //            GlobalS.chosenLetter = null;
         }
+<<<<<<< HEAD
     }//add support for smaller screens later
+=======
+    }
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
 
     @SuppressLint("SetTextI18n")
     public void printStarter() {
         TextView text = (TextView) findViewById(R.id.textView3);
+<<<<<<< HEAD
         TextView text2 = (TextView) findViewById(R.id.textView9);
+=======
+        TextView text2 = (TextView) findViewById(R.id.textView14);
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
         TextView text3 = (TextView) findViewById(R.id.textView10);
         TextView text4 = (TextView) findViewById(R.id.textView11);
         TextView text5 = (TextView) findViewById(R.id.textView12);
         if(GlobalS.chosenLetter.equals("alef")) {
+<<<<<<< HEAD
             text.setText("This character is pronounced like aw in \"law,\" or as the \"o\" in \"hot\"");
+=======
+            text.setText("This character is pronounced like \"aw\" in law");
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
             text2.setText("ا"); //later improve the constraints for the strings (see xml warnings)
             text3.setText("ا");
             text4.setText("ا");
             text5.setText("ـا");
         }
+<<<<<<< HEAD
         if(GlobalS.chosenLetter.equals("be")) {
             text.setText("This character is pronounced as b in boy"); //change sentences to have better wording later
             text2.setText("ب");
@@ -290,6 +330,8 @@ public class MainActivity2 extends AppCompatActivity {
             text4.setText("ـم");
             text5.setText("ـم");
         }
+=======
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
     }
 
     public void changeScreen() {

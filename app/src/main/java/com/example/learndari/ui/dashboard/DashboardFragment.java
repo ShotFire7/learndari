@@ -34,6 +34,7 @@ public class DashboardFragment extends Fragment {
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         Button btn1 = (Button) root.findViewById(R.id.btn1);
+<<<<<<< HEAD
         Button btn2 = (Button) root.findViewById(R.id.btn2);
         Button btn7 = (Button) root.findViewById(R.id.btn7);
         Button btn9 = (Button) root.findViewById(R.id.btn9);
@@ -63,11 +64,18 @@ public class DashboardFragment extends Fragment {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+=======
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("CREATION","joisarentarositnariost");
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
                 GlobalS.chosenLetter = "alef";
                 changeScreen();
                 MainActivity2 mainActivity2 = new MainActivity2();
             }
         });
+<<<<<<< HEAD
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -277,6 +285,11 @@ public class DashboardFragment extends Fragment {
             }
         });
         return root; //hola, me from the past here. Use the workbook link in pinned tab once u done with the alphabet, implement one lesson a day. No need for quizzes tbh, let's not get too advanced
+=======
+
+        //find how to put functions in fragments
+        return root;
+>>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
     }
 
     @Override
