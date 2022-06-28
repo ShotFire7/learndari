@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="727dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <Button
+                android:id="@+id/btn73"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="904dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn74"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn74"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="904dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn75"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="908dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn73"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn72"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn75"
+                app:layout_constraintEnd_toStartOf="@+id/btn70"
+                app:layout_constraintHorizontal_bias="0.324"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn70"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn73"
+                app:layout_constraintEnd_toStartOf="@+id/btn71"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn71"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn74"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn69"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn72"
+                app:layout_constraintEnd_toStartOf="@+id/btn67"
+                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn67"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn70"
+                app:layout_constraintEnd_toStartOf="@+id/btn68"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn68"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="40dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn71"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn65"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="16dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn68"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn64"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="16dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn67"
+                app:layout_constraintEnd_toStartOf="@+id/btn65"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn66"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="20dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn69"
+                app:layout_constraintEnd_toStartOf="@+id/btn64"
+                app:layout_constraintHorizontal_bias="0.358"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn62"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn65"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn61"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn64"
+                app:layout_constraintEnd_toStartOf="@+id/btn62"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn63"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn66"
+                app:layout_constraintEnd_toStartOf="@+id/btn61"
+                app:layout_constraintHorizontal_bias="0.371"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ب"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="@+id/btn2"
+                app:layout_constraintTop_toTopOf="@+id/btn2" />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn20"
+                app:layout_constraintEnd_toStartOf="@+id/btn13"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn20"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn23"
+                app:layout_constraintEnd_toStartOf="@+id/btn21"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn24"
+                app:layout_constraintEnd_toStartOf="@+id/btn22"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn22"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="40dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn25"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn23"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn55"
+                app:layout_constraintEnd_toStartOf="@+id/btn24"
+                app:layout_constraintHorizontal_bias="0.527"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn55"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="28dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn63"
+                app:layout_constraintEnd_toStartOf="@+id/btn56"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ش"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="@+id/btn55"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="@+id/btn55"
+                app:layout_constraintTop_toTopOf="@+id/btn55"
+                app:layout_constraintVertical_bias="0.233" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ض"
+                app:layout_constraintBottom_toTopOf="@+id/textView20"
+                app:layout_constraintEnd_toEndOf="@+id/btn56"
+                app:layout_constraintStart_toStartOf="@+id/btn56"
+                app:layout_constraintTop_toTopOf="@+id/btn56" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ط"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintEnd_toEndOf="@+id/btn57"
+                app:layout_constraintStart_toStartOf="@+id/btn57"
+                app:layout_constraintTop_toTopOf="@+id/btn57" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ظ"
+                app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintEnd_toEndOf="@+id/btn63"
+                app:layout_constraintStart_toStartOf="@+id/btn63"
+                app:layout_constraintTop_toTopOf="@+id/btn63" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ف"
+                app:layout_constraintBottom_toTopOf="@+id/textView55"
+                app:layout_constraintEnd_toEndOf="@+id/btn66"
+                app:layout_constraintStart_toStartOf="@+id/btn66"
+                app:layout_constraintTop_toTopOf="@+id/btn66" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ق"
+                app:layout_constraintBottom_toTopOf="@+id/textView56"
+                app:layout_constraintEnd_toEndOf="@+id/btn64"
+                app:layout_constraintStart_toStartOf="@+id/btn64"
+                app:layout_constraintTop_toTopOf="@+id/btn64" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ک"
+                app:layout_constraintBottom_toTopOf="@+id/textView58"
+                app:layout_constraintEnd_toEndOf="@+id/btn65"
+                app:layout_constraintStart_toStartOf="@+id/btn65"
+                app:layout_constraintTop_toTopOf="@+id/btn65" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="گ"
+                app:layout_constraintBottom_toTopOf="@+id/textView60"
+                app:layout_constraintEnd_toEndOf="@+id/btn69"
+                app:layout_constraintStart_toStartOf="@+id/btn69"
+                app:layout_constraintTop_toTopOf="@+id/btn69" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ل"
+                app:layout_constraintBottom_toTopOf="@+id/textView59"
+                app:layout_constraintEnd_toEndOf="@+id/btn67"
+                app:layout_constraintStart_toStartOf="@+id/btn67"
+                app:layout_constraintTop_toTopOf="@+id/btn67" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="م"
+                app:layout_constraintBottom_toTopOf="@+id/textView61"
+                app:layout_constraintEnd_toEndOf="@+id/btn68"
+                app:layout_constraintStart_toStartOf="@+id/btn68"
+                app:layout_constraintTop_toTopOf="@+id/btn68" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ع"
+                app:layout_constraintBottom_toTopOf="@+id/textView35"
+                app:layout_constraintEnd_toEndOf="@+id/btn61"
+                app:layout_constraintStart_toStartOf="@+id/btn61"
+                app:layout_constraintTop_toTopOf="@+id/btn61" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="غ"
+                app:layout_constraintBottom_toTopOf="@+id/textView36"
+                app:layout_constraintEnd_toEndOf="@+id/btn62"
+                app:layout_constraintStart_toStartOf="@+id/btn62"
+                app:layout_constraintTop_toTopOf="@+id/btn62" />
+
+            <Button
+                android:id="@+id/btn57"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="24dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn62"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn56"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="24dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn61"
+                app:layout_constraintEnd_toStartOf="@+id/btn57"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn24"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn56"
+                app:layout_constraintEnd_toStartOf="@+id/btn25"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="ze"
+                app:layout_constraintBottom_toBottomOf="@+id/btn23"
+                app:layout_constraintEnd_toStartOf="@+id/btn21"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="že"
+                app:layout_constraintBottom_toBottomOf="@+id/btn24"
+                app:layout_constraintEnd_toStartOf="@+id/textView50"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toEndOf="@+id/textView48" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="šin"
+                app:layout_constraintBottom_toBottomOf="@+id/btn55"
+                app:layout_constraintEnd_toEndOf="@+id/btn55"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="@+id/btn55" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="sād"
+                app:layout_constraintBottom_toBottomOf="@+id/btn56"
+                app:layout_constraintEnd_toEndOf="@+id/btn56"
+                app:layout_constraintStart_toStartOf="@+id/btn56" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="tā/toy"
+                app:layout_constraintBottom_toBottomOf="@+id/btn57"
+                app:layout_constraintEnd_toEndOf="@+id/btn57"
+                app:layout_constraintStart_toStartOf="@+id/btn57" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="zā/zoy"
+                app:layout_constraintBottom_toBottomOf="@+id/btn63"
+                app:layout_constraintEnd_toEndOf="@+id/btn63"
+                app:layout_constraintStart_toStartOf="@+id/btn63" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="fe"
+                app:layout_constraintBottom_toBottomOf="@+id/btn66"
+                app:layout_constraintEnd_toEndOf="@+id/btn66"
+                app:layout_constraintStart_toStartOf="@+id/btn66" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="mim"
+                app:layout_constraintBottom_toBottomOf="@+id/btn68"
+                app:layout_constraintEnd_toEndOf="@+id/btn68"
+                app:layout_constraintStart_toStartOf="@+id/btn68" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="qāf"
+                app:layout_constraintBottom_toBottomOf="@+id/btn64"
+                app:layout_constraintEnd_toEndOf="@+id/btn64"
+                app:layout_constraintStart_toStartOf="@+id/btn64" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="kāf"
+                app:layout_constraintBottom_toBottomOf="@+id/btn65"
+                app:layout_constraintEnd_toEndOf="@+id/btn65"
+                app:layout_constraintStart_toStartOf="@+id/btn65" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="lām"
+                app:layout_constraintBottom_toBottomOf="@+id/btn67"
+                app:layout_constraintEnd_toEndOf="@+id/btn67"
+                app:layout_constraintStart_toStartOf="@+id/btn67" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="gāf"
+                app:layout_constraintBottom_toBottomOf="@+id/btn69"
+                app:layout_constraintEnd_toEndOf="@+id/btn69"
+                app:layout_constraintStart_toStartOf="@+id/btn69" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="ayn"
+                app:layout_constraintBottom_toBottomOf="@+id/btn61"
+                app:layout_constraintEnd_toEndOf="@+id/btn61"
+                app:layout_constraintStart_toStartOf="@+id/btn61" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="ğayn"
+                app:layout_constraintBottom_toBottomOf="@+id/btn62"
+                app:layout_constraintEnd_toEndOf="@+id/btn62"
+                app:layout_constraintStart_toStartOf="@+id/btn62" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="64dp"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="sin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ز"
+                app:layout_constraintBottom_toTopOf="@+id/textView51"
+                app:layout_constraintEnd_toEndOf="@+id/btn23"
+                app:layout_constraintStart_toStartOf="@+id/btn23"
+                app:layout_constraintTop_toTopOf="@+id/btn23"
+                app:layout_constraintVertical_bias="0.482" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ژ"
+                app:layout_constraintBottom_toTopOf="@+id/textView52"
+                app:layout_constraintEnd_toEndOf="@+id/btn24"
+                app:layout_constraintStart_toStartOf="@+id/btn24"
+                app:layout_constraintTop_toTopOf="@+id/btn24"
+                app:layout_constraintVertical_bias="0.481" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="س"
+                app:layout_constraintEnd_toEndOf="@+id/btn25"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="@+id/btn25"
+                app:layout_constraintTop_toTopOf="@+id/btn25" />
+
+            <Button
+                android:id="@+id/btn25"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn57"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="@string/alef1"
+                app:layout_constraintBottom_toBottomOf="@+id/btn1"
+                app:layout_constraintEnd_toEndOf="@+id/btn1"
+                app:layout_constraintStart_toStartOf="@+id/btn1" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ج"
+                app:layout_constraintBottom_toTopOf="@+id/textView27"
+                app:layout_constraintEnd_toEndOf="@+id/btn11"
+                app:layout_constraintStart_toStartOf="@+id/btn11"
+                app:layout_constraintTop_toTopOf="@+id/btn11" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="se"
+                app:layout_constraintBottom_toBottomOf="@+id/btn10"
+                app:layout_constraintEnd_toEndOf="@+id/btn10"
+                app:layout_constraintStart_toStartOf="@+id/btn10" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="dāl"
+                app:layout_constraintBottom_toBottomOf="@+id/btn20"
+                app:layout_constraintEnd_toEndOf="@+id/btn20"
+                app:layout_constraintStart_toStartOf="@+id/btn20" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="zāl"
+                app:layout_constraintBottom_toBottomOf="@+id/btn21"
+                app:layout_constraintEnd_toEndOf="@+id/btn21"
+                app:layout_constraintStart_toStartOf="@+id/btn21" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="re"
+                app:layout_constraintBottom_toTopOf="@+id/textView53"
+                app:layout_constraintEnd_toEndOf="@+id/textView44"
+                app:layout_constraintStart_toStartOf="@+id/textView44"
+                app:layout_constraintTop_toBottomOf="@+id/btn14" />
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="68dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn22"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="pe"
+                app:layout_constraintBottom_toBottomOf="@+id/btn7"
+                app:layout_constraintEnd_toEndOf="@+id/btn7"
+                app:layout_constraintStart_toStartOf="@+id/btn7" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="16dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn9"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="če"
+                app:layout_constraintBottom_toBottomOf="@+id/btn12"
+                app:layout_constraintEnd_toEndOf="@+id/btn12"
+                app:layout_constraintStart_toStartOf="@+id/btn12" />
+
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="52dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn21"
+                app:layout_constraintEnd_toStartOf="@+id/btn14"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="40dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn13"
+                app:layout_constraintEnd_toStartOf="@+id/btn11"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="xe"
+                app:layout_constraintBottom_toBottomOf="@+id/btn14"
+                app:layout_constraintEnd_toEndOf="@+id/btn14"
+                app:layout_constraintStart_toStartOf="@+id/btn14" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginBottom="40dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn12"
+                app:layout_constraintEnd_toStartOf="@+id/btn10"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ث"
+                app:layout_constraintBottom_toTopOf="@+id/textView25"
+                app:layout_constraintEnd_toEndOf="@+id/btn10"
+                app:layout_constraintStart_toStartOf="@+id/btn10"
+                app:layout_constraintTop_toTopOf="@+id/btn10" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="be"
+                app:layout_constraintBottom_toBottomOf="@+id/btn2"
+                app:layout_constraintEnd_toEndOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="@+id/btn2" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ت"
+                app:layout_constraintBottom_toTopOf="@+id/textView23"
+                app:layout_constraintEnd_toEndOf="@+id/btn9"
+                app:layout_constraintStart_toStartOf="@+id/btn9"
+                app:layout_constraintTop_toTopOf="@+id/btn9" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="د"
+                app:layout_constraintBottom_toTopOf="@+id/textView48"
+                app:layout_constraintEnd_toEndOf="@+id/btn20"
+                app:layout_constraintStart_toStartOf="@+id/btn20"
+                app:layout_constraintTop_toTopOf="@+id/btn20" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ذ"
+                app:layout_constraintBottom_toTopOf="@+id/textView49"
+                app:layout_constraintEnd_toEndOf="@+id/btn21"
+                app:layout_constraintStart_toStartOf="@+id/btn21"
+                app:layout_constraintTop_toTopOf="@+id/btn21" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ر"
+                app:layout_constraintBottom_toTopOf="@+id/textView50"
+                app:layout_constraintEnd_toEndOf="@+id/btn22"
+                app:layout_constraintStart_toStartOf="@+id/btn22"
+                app:layout_constraintTop_toTopOf="@+id/btn22" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="he"
+                app:layout_constraintBottom_toBottomOf="@+id/btn13"
+                app:layout_constraintEnd_toEndOf="@+id/btn13"
+                app:layout_constraintStart_toStartOf="@+id/btn13" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="88dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn11"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/text_dashboard"
+                android:layout_width="323dp"
+                android:layout_height="43dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="88dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn10"
+                app:layout_constraintEnd_toStartOf="@+id/btn7"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="jim"
+                app:layout_constraintBottom_toBottomOf="@+id/btn11"
+                app:layout_constraintEnd_toEndOf="@+id/btn11"
+                app:layout_constraintStart_toStartOf="@+id/btn11" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="خ"
+                app:layout_constraintBottom_toTopOf="@+id/textView33"
+                app:layout_constraintEnd_toEndOf="@+id/btn14"
+                app:layout_constraintStart_toStartOf="@+id/btn14"
+                app:layout_constraintTop_toTopOf="@+id/btn14" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ا"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="@+id/btn1"
+                app:layout_constraintStart_toStartOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="@+id/btn1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="پ"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="@+id/btn7"
+                app:layout_constraintStart_toStartOf="@+id/btn7"
+                app:layout_constraintTop_toTopOf="@+id/btn7" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ح"
+                app:layout_constraintBottom_toTopOf="@+id/textView31"
+                app:layout_constraintEnd_toEndOf="@+id/btn13"
+                app:layout_constraintStart_toStartOf="@+id/btn13"
+                app:layout_constraintTop_toTopOf="@+id/btn13" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="te"
+                app:layout_constraintBottom_toBottomOf="@+id/btn9"
+                app:layout_constraintEnd_toEndOf="@+id/btn9"
+                app:layout_constraintStart_toStartOf="@+id/btn9" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="چ"
+                app:layout_constraintBottom_toTopOf="@+id/textView29"
+                app:layout_constraintEnd_toEndOf="@+id/btn12"
+                app:layout_constraintStart_toStartOf="@+id/btn12"
+                app:layout_constraintTop_toTopOf="@+id/btn12" />
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="89dp"
+                android:layout_height="107dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="36dp"
+                android:background="#00FFFFFF"
+                android:visibility="visible"
+                app:iconTint="#00ED2C2C"
+                app:layout_constraintBottom_toTopOf="@+id/btn14"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="411dp"
+                android:layout_height="78dp"
+                android:text="TextView"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

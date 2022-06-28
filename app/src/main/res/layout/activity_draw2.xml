@@ -1,0 +1,105 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.learndari.ui.dashboard.DrawActivity" >
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClearSelected"
+        android:text="CLEAR"
+        tools:ignore="UsingOnClickInXml" />
+<!--    android:text="@string/clear"-->
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onQuillSelected"
+            android:text="Select Quill"
+            tools:ignore="UsingOnClickInXml" />
+        <!--            android:text="@string/quill"-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMarkerSelected"
+            android:text="Select Marker"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="Guide"
+            android:textAlignment="textEnd" />
+        <!--            android:text="@string/marker"-->
+
+    </LinearLayout>
+
+    <!--        android:text="@string/multistroke"-->
+
+    <Switch
+        android:id="@+id/multistroke_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="false"
+        android:layout_marginStart="362dp"
+        android:layout_marginTop="-5dp"
+        android:checked="true"
+        android:clickable="false"
+        android:enabled="false"
+        android:textOff="OFF"
+        android:visibility="gone"
+        android:textOn="ON"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml,UsingOnClickInXml" />
+
+    <com.example.learndari.ui.dashboard.DrawingArea
+        android:id="@+id/drawing_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/clear_btn"
+        android:layout_below="@+id/multistroke_btn"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="332dp"
+            android:fontFamily="sans-serif"
+            android:scaleX="25"
+            android:scaleY="25"
+            android:text="ا"
+            android:textColor="#8F8D8D"
+            android:textColorHint="#8F8D8D"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="285dp"
+            android:layout_marginBottom="596dp"
+            android:text="back" />
+    </com.example.learndari.ui.dashboard.DrawingArea>
+
+</RelativeLayout>
