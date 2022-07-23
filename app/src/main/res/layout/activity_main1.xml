@@ -23,10 +23,14 @@
 
     <TextView
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:id="@+id/textView17"
 =======
         android:id="@+id/textView9"
 >>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
+=======
+        android:id="@+id/textView17"
+>>>>>>> 9401af2 (new update)
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="517dp"
@@ -92,6 +96,9 @@
         android:layout_width="89dp"
         android:layout_height="120dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9401af2 (new update)
         android:layout_marginStart="164dp"
         android:layout_marginEnd="163dp"
         android:layout_marginBottom="541dp"
@@ -105,6 +112,7 @@
 
     <TextView
         android:id="@+id/textView9"
+<<<<<<< HEAD
 =======
         android:layout_marginTop="70dp"
         android:background="#00FFFFFF"
@@ -118,6 +126,8 @@
     <TextView
         android:id="@+id/textView14"
 >>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
+=======
+>>>>>>> 9401af2 (new update)
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="570dp"

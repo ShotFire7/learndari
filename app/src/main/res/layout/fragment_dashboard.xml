@@ -7,6 +7,9 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9401af2 (new update)
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
@@ -416,6 +419,57 @@
                 app:layout_constraintTop_toTopOf="@+id/btn69" />
 
             <TextView
+<<<<<<< HEAD
+=======
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ن"
+                app:layout_constraintBottom_toTopOf="@+id/textView71"
+                app:layout_constraintEnd_toEndOf="@+id/btn72"
+                app:layout_constraintStart_toStartOf="@+id/btn72"
+                app:layout_constraintTop_toTopOf="@+id/btn72" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="و"
+                app:layout_constraintBottom_toTopOf="@+id/textView72"
+                app:layout_constraintEnd_toEndOf="@+id/btn70"
+                app:layout_constraintStart_toStartOf="@+id/btn70"
+                app:layout_constraintTop_toTopOf="@+id/btn70" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ه"
+                app:layout_constraintBottom_toTopOf="@+id/textView73"
+                app:layout_constraintEnd_toEndOf="@+id/btn71"
+                app:layout_constraintStart_toStartOf="@+id/btn71"
+                app:layout_constraintTop_toTopOf="@+id/btn71" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="5"
+                android:scaleY="5"
+                android:text="ى"
+                app:layout_constraintBottom_toTopOf="@+id/textView74"
+                app:layout_constraintEnd_toEndOf="@+id/btn73"
+                app:layout_constraintStart_toStartOf="@+id/btn73"
+                app:layout_constraintTop_toTopOf="@+id/btn73" />
+
+            <TextView
+>>>>>>> 9401af2 (new update)
                 android:id="@+id/textView65"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -638,6 +692,53 @@
                 app:layout_constraintStart_toStartOf="@+id/btn69" />
 
             <TextView
+<<<<<<< HEAD
+=======
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="nun"
+                app:layout_constraintBottom_toBottomOf="@+id/btn72"
+                app:layout_constraintEnd_toEndOf="@+id/btn72"
+                app:layout_constraintStart_toStartOf="@+id/btn72" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="wāw"
+                app:layout_constraintBottom_toBottomOf="@+id/btn70"
+                app:layout_constraintEnd_toEndOf="@+id/btn70"
+                app:layout_constraintStart_toStartOf="@+id/btn70" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="he"
+                app:layout_constraintBottom_toBottomOf="@+id/btn71"
+                app:layout_constraintEnd_toEndOf="@+id/btn71"
+                app:layout_constraintStart_toStartOf="@+id/btn71" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="3"
+                android:scaleY="3"
+                android:text="yā"
+                app:layout_constraintBottom_toBottomOf="@+id/btn73"
+                app:layout_constraintEnd_toEndOf="@+id/btn73"
+                app:layout_constraintStart_toStartOf="@+id/btn73" />
+
+            <TextView
+>>>>>>> 9401af2 (new update)
                 android:id="@+id/textView35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -1117,6 +1218,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+<<<<<<< HEAD
 =======
     <TextView
         android:id="@+id/text_dashboard"
@@ -1171,4 +1273,6 @@
         app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
         tools:ignore="SpeakableTextPresentCheck" />
 >>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
+=======
+>>>>>>> 9401af2 (new update)
 </androidx.constraintlayout.widget.ConstraintLayout>

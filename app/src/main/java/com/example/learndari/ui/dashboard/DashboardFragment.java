@@ -35,6 +35,9 @@ public class DashboardFragment extends Fragment {
 
         Button btn1 = (Button) root.findViewById(R.id.btn1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9401af2 (new update)
         Button btn2 = (Button) root.findViewById(R.id.btn2);
         Button btn7 = (Button) root.findViewById(R.id.btn7);
         Button btn9 = (Button) root.findViewById(R.id.btn9);
@@ -61,6 +64,7 @@ public class DashboardFragment extends Fragment {
         Button btn69 = (Button) root.findViewById(R.id.btn69);
         Button btn67 = (Button) root.findViewById(R.id.btn67);
         Button btn68 = (Button) root.findViewById(R.id.btn68);
+<<<<<<< HEAD
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,12 +74,24 @@ public class DashboardFragment extends Fragment {
             public void onClick(View v) {
                 Log.d("CREATION","joisarentarositnariost");
 >>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
+=======
+        Button btn72 = (Button) root.findViewById(R.id.btn72);
+        Button btn70 = (Button) root.findViewById(R.id.btn70);
+        Button btn71 = (Button) root.findViewById(R.id.btn71);
+        Button btn73 = (Button) root.findViewById(R.id.btn73);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+>>>>>>> 9401af2 (new update)
                 GlobalS.chosenLetter = "alef";
                 changeScreen();
                 MainActivity2 mainActivity2 = new MainActivity2();
             }
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9401af2 (new update)
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -284,12 +300,48 @@ public class DashboardFragment extends Fragment {
                 MainActivity2 mainActivity2 = new MainActivity2();
             }
         });
+<<<<<<< HEAD
         return root; //hola, me from the past here. Use the workbook link in pinned tab once u done with the alphabet, implement one lesson a day. No need for quizzes tbh, let's not get too advanced
 =======
 
         //find how to put functions in fragments
         return root;
 >>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
+=======
+        btn72.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalS.chosenLetter = "nun";
+                changeScreen();
+                MainActivity2 mainActivity2 = new MainActivity2();
+            }
+        });
+        btn70.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalS.chosenLetter = "waw";
+                changeScreen();
+                MainActivity2 mainActivity2 = new MainActivity2();
+            }
+        });
+        btn71.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalS.chosenLetter = "he";
+                changeScreen();
+                MainActivity2 mainActivity2 = new MainActivity2();
+            }
+        });
+        btn73.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalS.chosenLetter = "ya";
+                changeScreen();
+                MainActivity2 mainActivity2 = new MainActivity2();
+            }
+        });
+        return root; //hola, me from the past here. Use the workbook link in pinned tab once u done with the alphabet, implement one lesson a day. No need for quizzes tbh, let's not get too advanced
+>>>>>>> 9401af2 (new update)
     }
 
     @Override

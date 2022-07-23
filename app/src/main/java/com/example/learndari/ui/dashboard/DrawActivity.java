@@ -44,6 +44,9 @@ public class DrawActivity extends Activity {
         setContentView(R.layout.activity_draw2);
         TextView text = (TextView) findViewById(R.id.textView4);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9401af2 (new update)
         text.setText(GlobalS.drawLetter);
         Log.d("CREATION",GlobalS.drawLetter);
 //        switch (GlobalS.drawLetter) {
@@ -59,6 +62,7 @@ public class DrawActivity extends Activity {
 //
 //                break;
 //        }
+<<<<<<< HEAD
 =======
         switch (GlobalS.drawLetter) {
             case "alef1":
@@ -74,6 +78,8 @@ public class DrawActivity extends Activity {
                 break;
         }
 >>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
+=======
+>>>>>>> 9401af2 (new update)
 
         @SuppressLint("UseSwitchCompatOrMaterialCode")
         Switch hswitch = (Switch) findViewById(R.id.switch1); //later add a tip that says don't worry just draw a straight line for alef
