@@ -5,24 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import android.util.Log;
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
->>>>>>> 9401af2 (new update)
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import com.example.learndari.MainActivity;
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
->>>>>>> 9401af2 (new update)
 import com.example.learndari.R;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -38,10 +24,6 @@ public class MainActivity2 extends AppCompatActivity {
         Button button2 = (Button) findViewById(R.id.btn5);
         Button button3 = (Button) findViewById(R.id.btn4);
         Button button4 = (Button) findViewById(R.id.btn3);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9401af2 (new update)
         TextView text = (TextView) findViewById(R.id.textView3);
         TextView text2 = (TextView) findViewById(R.id.textView9);
         TextView text3 = (TextView) findViewById(R.id.textView10);
@@ -51,15 +33,6 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 GlobalS.drawLetter = text2.getText().toString();
-<<<<<<< HEAD
-=======
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GlobalS.drawLetter = GlobalS.chosenLetter+"1";
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
->>>>>>> 9401af2 (new update)
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -67,15 +40,7 @@ public class MainActivity2 extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 GlobalS.drawLetter = text3.getText().toString();
-=======
-                GlobalS.drawLetter = GlobalS.chosenLetter+"2";
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-                GlobalS.drawLetter = text3.getText().toString();
->>>>>>> 9401af2 (new update)
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -83,15 +48,7 @@ public class MainActivity2 extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 GlobalS.drawLetter = text4.getText().toString();
-=======
-                GlobalS.drawLetter = GlobalS.chosenLetter+"3";
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-                GlobalS.drawLetter = text4.getText().toString();
->>>>>>> 9401af2 (new update)
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -99,15 +56,7 @@ public class MainActivity2 extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 GlobalS.drawLetter = text5.getText().toString();
-=======
-                GlobalS.drawLetter = GlobalS.chosenLetter+"4";
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-                GlobalS.drawLetter = text5.getText().toString();
->>>>>>> 9401af2 (new update)
                 changeScreen();
                 DrawActivity drawActivity = new DrawActivity();
             }
@@ -136,276 +85,252 @@ public class MainActivity2 extends AppCompatActivity {
             printStarter();
 //            GlobalS.chosenLetter = null;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    }//add support for smaller screens later
-=======
-    }
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-    }//add support for smaller screens later
->>>>>>> 9401af2 (new update)
+    }//todo fix screen rotation on drawing & add support for smaller screens later
 
     @SuppressLint("SetTextI18n")
     public void printStarter() {
         TextView text = (TextView) findViewById(R.id.textView3);
-<<<<<<< HEAD
-<<<<<<< HEAD
         TextView text2 = (TextView) findViewById(R.id.textView9);
-=======
-        TextView text2 = (TextView) findViewById(R.id.textView14);
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-        TextView text2 = (TextView) findViewById(R.id.textView9);
->>>>>>> 9401af2 (new update)
         TextView text3 = (TextView) findViewById(R.id.textView10);
         TextView text4 = (TextView) findViewById(R.id.textView11);
         TextView text5 = (TextView) findViewById(R.id.textView12);
-        if(GlobalS.chosenLetter.equals("alef")) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            text.setText("This character is pronounced like aw in \"law,\" or as the \"o\" in \"hot\"");
-=======
-            text.setText("This character is pronounced like \"aw\" in law");
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-            text.setText("This character is pronounced like aw in \"law,\" or as the \"o\" in \"hot\"");
->>>>>>> 9401af2 (new update)
-            text2.setText("ا"); //later improve the constraints for the strings (see xml warnings)
-            text3.setText("ا");
-            text4.setText("ا");
-            text5.setText("ـا");
+        switch (GlobalS.chosenLetter) {
+            case "alef":  //TODO: figure out alif mad
+                text.setText("This character is pronounced like aw in \"law,\" or as the \"o\" in \"hot\"");
+                text2.setText("ا"); //later improve the constraints for the strings (see xml warnings)
+
+                text3.setText("ا");
+                text4.setText("ـا");
+                text5.setText("ـا");
+                break;
+            case "be":
+                text.setText("This character is pronounced as b in boy"); //change sentences to have better wording later
+
+                text2.setText("ب");
+                text3.setText("بـ");
+                text4.setText("ـبـ");
+                text5.setText("ـب");
+                break;
+            case "pe":
+                text.setText("This character is pronounced as p as in pen");//todo fix
+
+                text2.setText("پ");
+                text3.setText("پـ");
+                text4.setText("ـپـ");
+                text5.setText("ـپ");
+                break;
+            case "te":
+                text.setText("This character is pronounced as t in teach");
+                text2.setText("ت");
+                text3.setText("تـ");
+                text4.setText("ـتـ");
+                text5.setText("ـت");
+                break;
+            case "se":
+                text.setText("This character is pronounced as s as in son");
+                text2.setText("ث");
+                text3.setText("ثـ");
+                text4.setText("ـثـ");
+                text5.setText("ـث");
+                break;
+            case "jim":
+                text.setText("This character is pronounced as j in John");
+                text2.setText("ج");
+                text3.setText("جـ");
+                text4.setText("ـجـ");
+                text5.setText("ـج");
+                break;
+            case "ce":
+                text.setText("This character is pronounced as ch in chain");
+                text2.setText("چ");
+                text3.setText("چـ");
+                text4.setText("ـچـ");
+                text5.setText("ـچ");
+                break;
+            case "he":
+                text.setText("This character is pronounced as h in human");//todo fix this
+
+                text2.setText("ح");
+                text3.setText("حـ");
+                text4.setText("ـحـ");
+                text5.setText("ـح");
+                break;
+            case "xe":
+                text.setText("This character is pronounced as how ch is pronounced in the German language"); //bad sentence fix later
+
+                text2.setText("خ");
+                text3.setText("خـ");
+                text4.setText("ـخـ");
+                text5.setText("ـخ");
+                break;
+            case "dal":
+                text.setText("This character is pronounced as as d in dig but softer"); //bad sentence fix later
+
+                text2.setText("د");
+                text3.setText("د");
+                text4.setText("ـد");
+                text5.setText("ـد");//todo give the buttons a border in the fragments
+                break;
+            case "zal":
+                text.setText("This character is pronounced as z in zoo");
+                text2.setText("ذ");
+                text3.setText("ذ");
+                text4.setText("ـذ");
+                text5.setText("ـذ");
+                break;
+            case "re":
+                text.setText("This character is pronounced as rr in Spanish perro but softer");
+                text2.setText("ر");
+                text3.setText("ر");
+                text4.setText("ـر");
+                text5.setText("ـر");
+                break;
+            case "ze":
+                text.setText("This character is pronounced as z in zoo"); //duplicate sentence different letter
+
+                text2.setText("ز");
+                text3.setText("ز");
+                text4.setText("ـز");
+                text5.setText("ـز");
+                break;
+            case "ze2":
+                text.setText("This character is pronounced as s in measure");
+                text2.setText("ژ");
+                text3.setText("ژ");
+                text4.setText("ـژ");
+                text5.setText("ـژ");
+                break;
+            case "sin":
+                text.setText("This character is pronounced as s in son");
+                text2.setText("س");
+                text3.setText("سـ");
+                text4.setText("ـسـ");
+                text5.setText("ـس");
+                break;
+            case "sin2":
+                text.setText("This character is pronounced as sh in shame");
+                text2.setText("ش");
+                text3.setText("شـ");
+                text4.setText("ـشـ");
+                text5.setText("ـش");
+                break;
+            case "sad":
+                text.setText("This character is pronounced as s in son"); //duplicate sentence
+
+                text2.setText("ص");
+                text3.setText("ص");
+                text4.setText("ـص");
+                text5.setText("ـص");
+                break;
+            case "zad":
+                text.setText("This character is pronounced as z in zoo"); //duplicate sentence
+
+                text2.setText("ض");
+                text3.setText("صـ");
+                text4.setText("ـصـ");
+                text5.setText("ـص");
+                break;
+            case "ta":
+                text.setText("This character is pronounced as t in teach");
+                text2.setText("ط");
+                text3.setText("طـ");
+                text4.setText("ـطـ");
+                text5.setText("ـط");
+                break;
+            case "za":
+                text.setText("This character is pronounced as z in zoo"); //duplicate sentence
+
+                text2.setText("ظ");
+                text3.setText("ظـ");
+                text4.setText("ـظـ");
+                text5.setText("ـظ");
+                break;
+            case "ayn":
+                text.setText("This character is an intermediary in words like ‘ in Arabic Qur'an");
+                text2.setText("ع");
+                text3.setText("عـ");
+                text4.setText("ـعـ");
+                text5.setText("ـع");
+                break;
+            case "gayn":
+                text.setText("This character is pronounced as r in French Paris");
+                text2.setText("غ");
+                text3.setText("غـ");
+                text4.setText("ـغـ");
+                text5.setText("ـغ");
+                break;
+            case "fe":
+                text.setText("This character is pronounced as f in fish");
+                text2.setText("ف");
+                text3.setText("فـ");
+                text4.setText("ـفـ");
+                text5.setText("ـف");
+                break;
+            case "qaf":
+                text.setText("This character is pronounced as q in Arabic Qibla");
+                text2.setText("ق");
+                text3.setText("قـ");
+                text4.setText("ـقـ");
+                text5.setText("ـق");
+                break;
+            case "kaf":
+                text.setText("This character is pronounced as as k in king");
+                text2.setText("ک");
+                text3.setText("كـ");
+                text4.setText("ـكـ");
+                text5.setText("ـك");
+                break;
+            case "gaf": //s
+                text.setText("This character is pronounced as g in gift");
+                text2.setText("گ");
+                text3.setText("گـ");
+                text4.setText("ـگـ");
+                text5.setText("ـگ");
+                break;
+            case "lam":
+                text.setText("This character is pronounced as l in land");
+                text2.setText("ل");
+                text3.setText("لـ");
+                text4.setText("ـلـ");
+                text5.setText("ـل");
+                break;
+            case "mim":
+                text.setText("This character is pronounced as m in myth");
+                text2.setText("م");
+                text3.setText("مـ");
+                text4.setText("ـمـ");
+                text5.setText("ـم");
+                break;
+            case "nun":
+                text.setText("This character is pronounced as n in new");
+                text2.setText("ن");
+                text3.setText("نـ");
+                text4.setText("ـنـ");
+                text5.setText("ـن");
+                break;
+            case "waw":
+                text.setText("This character is pronounced as w in wet; oo in pool; as oa in coat");
+                text2.setText("و");
+                text3.setText("و");
+                text4.setText("و");
+                text5.setText("ـو");
+                break;
+            case "he2":
+                text.setText("This character is pronounced as as h in human; as o in hot");
+                text2.setText("ه");
+                text3.setText("ـو");
+                text4.setText("ه");//s
+
+                text5.setText("ـو");
+                break;
+            case "ya":
+                text.setText("This character is pronounced as as y in yes; as y in sky; as ea in seat; as a in may");
+                text2.setText("ى");
+                text3.setText("يـ");
+                text4.setText("ـيـ");
+                text5.setText("ـي");
+                break;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9401af2 (new update)
-        if(GlobalS.chosenLetter.equals("be")) {
-            text.setText("This character is pronounced as b in boy"); //change sentences to have better wording later
-            text2.setText("ب");
-            text3.setText("ب");
-            text4.setText("ـب");
-            text5.setText("ـب");
-        }
-        if(GlobalS.chosenLetter.equals("pe")) {
-            text.setText("This character is pronounced as p as in pen");
-            text2.setText("پ");
-            text3.setText("پ");
-            text4.setText("ـپ");
-            text5.setText("ـپ");
-        }
-        if(GlobalS.chosenLetter.equals("te")) {
-            text.setText("This character is pronounced as t in teach");
-            text2.setText("ت");
-            text3.setText("ت");
-            text4.setText("ـت");
-            text5.setText("ـت");
-        }
-        if(GlobalS.chosenLetter.equals("se")) {
-            text.setText("This character is pronounced as s as in son");
-            text2.setText("ث");
-            text3.setText("ث");
-            text4.setText("ـث");
-            text5.setText("ـث");
-        }
-        if(GlobalS.chosenLetter.equals("jim")) {
-            text.setText("This character is pronounced as j in John");
-            text2.setText("ج");
-            text3.setText("ج");
-            text4.setText("ـج");
-            text5.setText("ج");
-        }
-        if(GlobalS.chosenLetter.equals("ce")) {
-            text.setText("This character is pronounced as ch in chain");
-            text2.setText("چ");
-            text3.setText("چ");
-            text4.setText("ـچ");
-            text5.setText("چ");
-        }
-        if(GlobalS.chosenLetter.equals("he")) {
-            text.setText("This character is pronounced as h in human");
-            text2.setText("ح");
-            text3.setText("ح");
-            text4.setText("ـح");
-            text5.setText("ح");
-        }
-        if(GlobalS.chosenLetter.equals("xe")) {
-            text.setText("This character is pronounced as ch in bach"); //bad sentence fix later
-            text2.setText("خ");
-            text3.setText("خ");
-            text4.setText("ـخ");
-            text5.setText("خ");
-        }
-        if(GlobalS.chosenLetter.equals("dal")) {
-            text.setText("This character is pronounced as as d in dig but softer"); //bad sentence fix later
-            text2.setText("د");
-            text3.setText("د");
-            text4.setText("د");
-            text5.setText("ـد");
-        }
-        if(GlobalS.chosenLetter.equals("zal")) {
-            text.setText("This character is pronounced as z in zoo");
-            text2.setText("ذ");
-            text3.setText("ذ");
-            text4.setText("ذ");
-            text5.setText("ـذ");
-        }
-        if(GlobalS.chosenLetter.equals("re")) {
-            text.setText("This character is pronounced as rr in Spanish perro but softer");
-            text2.setText("ر");
-            text3.setText("ر");
-            text4.setText("ر");
-            text5.setText("ـر");
-        }
-        if(GlobalS.chosenLetter.equals("ze")) {
-            text.setText("This character is pronounced as z in zoo"); //duplicate sentence different letter
-            text2.setText("ز");
-            text3.setText("ز");
-            text4.setText("ز");
-            text5.setText("ـز");
-        }
-        if(GlobalS.chosenLetter.equals("ze2")) {
-            text.setText("This character is pronounced as s in measure");
-            text2.setText("ژ");
-            text3.setText("ژ");
-            text4.setText("ژ");
-            text5.setText("ـژ");
-        }
-        if(GlobalS.chosenLetter.equals("sin")) {
-            text.setText("This character is pronounced as s in son");
-            text2.setText("س");
-            text3.setText("س");
-            text4.setText("ـس");
-            text5.setText("ـس");
-        }
-        if(GlobalS.chosenLetter.equals("sin2")) {
-            text.setText("This character is pronounced as sh in shame ");
-            text2.setText("ش");
-            text3.setText("ش");
-            text4.setText("ـش");
-            text5.setText("ـش");
-        }
-        if(GlobalS.chosenLetter.equals("sad")) {
-            text.setText("This character is pronounced as s in son"); //duplicate sentence
-            text2.setText("ص");
-            text3.setText("ص");
-            text4.setText("ـص");
-            text5.setText("ـص");
-        }
-        if(GlobalS.chosenLetter.equals("zad")) {
-            text.setText("This character is pronounced as z in zoo"); //duplicate sentence
-            text2.setText("ض");
-            text3.setText("ض");
-            text4.setText("ـض");
-            text5.setText("ـض");
-        }
-        if(GlobalS.chosenLetter.equals("ta")) {
-            text.setText("This character is pronounced as t in teach");
-            text2.setText("ط");
-            text3.setText("طـ");
-            text4.setText("ـطـ");
-            text5.setText("ـط");
-        }
-        if(GlobalS.chosenLetter.equals("za")) {
-            text.setText("This character is pronounced as z in zoo"); //duplicate sentence
-            text2.setText("ظ");
-            text3.setText("ظـ");
-            text4.setText("ـظـ");
-            text5.setText("ـظ");
-        }
-        if(GlobalS.chosenLetter.equals("ayn")) {
-            text.setText("This character is pronounced as ‘ in Arabic Qur'an");
-            text2.setText("ع");
-            text3.setText("ع");
-            text4.setText("ع");
-            text5.setText("ع");
-        }
-        if(GlobalS.chosenLetter.equals("gayn")) {
-            text.setText("This character is pronounced as r in French Paris");
-            text2.setText("غ");
-            text3.setText("غ");
-            text4.setText("غ");
-            text5.setText("غ");
-        }
-        if(GlobalS.chosenLetter.equals("fe")) {
-            text.setText("This character is pronounced as f in fish");
-            text2.setText("ف");
-            text3.setText("ف");
-            text4.setText("ـف");
-            text5.setText("ـف");
-        }
-        if(GlobalS.chosenLetter.equals("qaf")) {
-            text.setText("This character is pronounced as q in Arabic Qibla");
-            text2.setText("ق");
-            text3.setText("ق");
-            text4.setText("ـق");
-            text5.setText("ـق");
-        }
-        if(GlobalS.chosenLetter.equals("kaf")) {
-            text.setText("This character is pronounced as as k in king");
-            text2.setText("ک");
-            text3.setText("ك");
-            text4.setText("ـك");
-            text5.setText("ـک");
-        }
-        if(GlobalS.chosenLetter.equals("gaf")) {
-            text.setText("This character is pronounced as g in gift");
-            text2.setText("گ");
-            text3.setText("گـ");
-            text4.setText("ـگـ");
-            text5.setText("ـگ");
-        }
-        if(GlobalS.chosenLetter.equals("lam")) {
-            text.setText("This character is pronounced as l in land");
-            text2.setText("ل");
-            text3.setText("ل");
-            text4.setText("ـل");
-            text5.setText("ـل");
-        }
-        if(GlobalS.chosenLetter.equals("mim")) {
-<<<<<<< HEAD
-            text.setText("This character is pronounced as  m in myth");
-=======
-            text.setText("This character is pronounced as m in myth");
->>>>>>> 9401af2 (new update)
-            text2.setText("م");
-            text3.setText("م");
-            text4.setText("ـم");
-            text5.setText("ـم");
-        }
-<<<<<<< HEAD
-=======
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
-        if(GlobalS.chosenLetter.equals("nun")) {
-            text.setText("This character is pronounced as n in new");
-            text2.setText("ن");
-            text3.setText("ن");
-            text4.setText("ـن");
-            text5.setText("ـن");
-        }
-        if(GlobalS.chosenLetter.equals("waw")) {
-            text.setText("This character is pronounced as w in wet; oo in pool; as oa in coat");
-            text2.setText("و");
-            text3.setText("و");
-            text4.setText("و");
-            text5.setText("ـو");
-        }
-        if(GlobalS.chosenLetter.equals("he")) {
-            text.setText("This character is pronounced as as h in human; as o in hot");
-            text2.setText("ه");
-            text3.setText("ه");
-            text4.setText("ه");
-            text5.setText("ه");
-        }
-        if(GlobalS.chosenLetter.equals("ya")) {
-            text.setText("This character is pronounced as as y in yes; as y in sky; as ea in seat; as a in may");
-            text2.setText("ى");
-            text3.setText("ي");
-            text4.setText("ـي");
-            text5.setText("ـى");
-        }
->>>>>>> 9401af2 (new update)
     }
 
     public void changeScreen() {

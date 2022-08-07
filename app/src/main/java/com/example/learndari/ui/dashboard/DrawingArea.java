@@ -13,6 +13,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
@@ -26,6 +27,7 @@ public class DrawingArea extends RelativeLayout implements IAnimListener {
 
     private ITrailDrawer trailDrawer;
 
+
     public DrawingArea(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -33,10 +35,16 @@ public class DrawingArea extends RelativeLayout implements IAnimListener {
     public void initTrailDrawer() {
         setWillNotDraw(false);
         trailDrawer = new TrailDrawer(this);
-        trailDrawer.getTrailOptions().setColor(TRAIL_COLOR);
+        if (GlobalS.drawColor == 0) {
+            trailDrawer.getTrailOptions().setColor(Color.BLACK);
+        } else {
+            trailDrawer.getTrailOptions().setColor(GlobalS.drawColor);
+        }
+        Log.d("creation",String.valueOf(GlobalS.drawColor));
+        trailDrawer.getTrailOptions().selectMarkerPen();
         trailDrawer.setAnimationListener(this);
     }
-
+//todo fix select marker button in the xml
     public void trimMemory() {
         trailDrawer.clear();
         trailDrawer.trimMemory();
@@ -56,11 +64,11 @@ public class DrawingArea extends RelativeLayout implements IAnimListener {
         return true;
     }
 
-
     private void dispatchEvent(MotionEvent event) {
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
                 trailDrawer.touchDown((int)event.getX(), (int)event.getY());
+                dispatchMove(event);
                 break;
             case MotionEvent.ACTION_MOVE:
                 dispatchMove(event);
@@ -106,6 +114,7 @@ public class DrawingArea extends RelativeLayout implements IAnimListener {
     }
 
     public void onMultistrokeSwitchToggled(boolean checked) {
+        Log.d("creation", String.valueOf(checked));
         trailDrawer.clear();
         trailDrawer.setMultistrokeEnabled(checked);
     }

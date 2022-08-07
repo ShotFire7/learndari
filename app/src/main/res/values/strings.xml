@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">learndari</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="alef">آ</string>
+    <string name="app_name">DariAlphabet</string>
+    <string name="title_home">Pronounce</string>
+    <string name="title_dashboard">Alphabet</string>
+    <string name="title_notifications">Settings</string>
+    <string name="alef">ا</string>
     <string name="alef1">aléf</string>
 </resources>

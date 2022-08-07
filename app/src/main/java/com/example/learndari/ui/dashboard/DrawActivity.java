@@ -43,47 +43,11 @@ public class DrawActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw2);
         TextView text = (TextView) findViewById(R.id.textView4);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9401af2 (new update)
         text.setText(GlobalS.drawLetter);
         Log.d("CREATION",GlobalS.drawLetter);
-//        switch (GlobalS.drawLetter) {
-//            case "alef1":
-//            case "alef3":
-//            case "alef2":
-//                text.setText("ا"); //improve this later by replacing the if statement and going back and changing the variable to the letter itself
-//
-//                break;
-//
-//            case "alef4":
-//                text.setText("ـا");
-//
-//                break;
-//        }
-<<<<<<< HEAD
-=======
-        switch (GlobalS.drawLetter) {
-            case "alef1":
-            case "alef3":
-            case "alef2":
-                text.setText("ا"); //improve this later by replacing the if statement and going back and changing the variable to the letter itself
-
-                break;
-
-            case "alef4":
-                text.setText("ـا");
-
-                break;
-        }
->>>>>>> 6b0642a750f59ba22352f2f0eac941089dd97423
-=======
->>>>>>> 9401af2 (new update)
 
         @SuppressLint("UseSwitchCompatOrMaterialCode")
-        Switch hswitch = (Switch) findViewById(R.id.switch1); //later add a tip that says don't worry just draw a straight line for alef
-
+        Switch hswitch = (Switch) findViewById(R.id.switch1);
         hswitch.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b){
                 text.setVisibility(View.VISIBLE);
@@ -92,12 +56,11 @@ public class DrawActivity extends Activity {
                 text.setVisibility(View.GONE);
             }
         });
-        Button button = (Button) findViewById(R.id.button); // ay yo maybe make a fancier back button like those arrows in the top left later
+        Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
-//                MainActivity2 drawActivity = new MainActivity2();
             }
         });
     }
@@ -122,14 +85,7 @@ public class DrawActivity extends Activity {
         }
     }
 
-//    public void printStarter2() {
-//        TextView text = (TextView) findViewById(R.id.textView4);
-//        if(GlobalS.drawLetter.equals("alef")) {
-//            text.setText("ا");
-//            Log.d("CREATION", "awrstarst");
-//        }
-//    }
-//
+
 
 
     /** on click, see layout.xml */
@@ -150,7 +106,7 @@ public class DrawActivity extends Activity {
     /** on click, see layout.xml */
     public void onMultistrokeSwitchToggled(View view) {
         @SuppressLint("UseSwitchCompatOrMaterialCode")
-        Switch toggle = (Switch) view; //remove this useless switch later
+        Switch toggle = (Switch) view;
         drawingArea.onMultistrokeSwitchToggled(toggle.isChecked());
     }
 }
